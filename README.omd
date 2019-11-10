@@ -1,4 +1,4 @@
-# spring-boot-oauth2-jwt-example
+**spring-boot-oauth2-jwt-example **
 This Spring boot application provides simple example to implement oauth2 security with in memory db(H2).
 For sake of easy understanding we have provided Authorization & Resource Server in same application.
 
@@ -10,6 +10,6 @@ Following are the steps to execute and test this application:-
   Authorization Type: Basic Auth
   Username: gagan-client
   Password: gagan-secret
-3. Copy "access_token" from response and paste this as "Token" with "Authorization Type: Bearer Token" when call any of the api provided in swagger-ui link.
+3. Copy "access_token" from response and paste this as "Token" with _"Authorization Type: Bearer Token"_ when call any of the api provided in swagger-ui link.
 4. To get api-docs we will use below swagger-ui link:-
 http://localhost:8080/swagger-ui.html
