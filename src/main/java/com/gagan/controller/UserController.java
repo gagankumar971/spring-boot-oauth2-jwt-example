@@ -25,7 +25,7 @@ public class UserController {
     public User create(@RequestBody User user){
         return userService.save(user);
     }
-
+    @PreAuthorize("hasRole('ADMIN')")	
     @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
     public String delete(@PathVariable(value = "id") Long id){
         userService.delete(id);
