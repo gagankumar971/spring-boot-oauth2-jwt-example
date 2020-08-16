@@ -6,10 +6,10 @@ Following are the steps to execute and test this application:-
 
 1. To execute this application at command line: mvn spring-boot:run
 2. We can get the token from below api & Authorization details:
-  http://localhost:8080/oauth/token
+  url: http://localhost:8080/oauth/token?username=Gagan&password=password&grant_type=password
   Authorization Type: Basic Auth
   Username: gagan-client
   Password: gagan-secret
-3. Copy "access_token" from response and paste this as "Token" with "Authorization Type: Bearer Token" when call any of the api provided in swagger-ui link.
+3. Copy "access_token" value(encrypted_string) and paste this against Authorization key for eg: "Bearer encrypted_string" when call secure api.
 4. To get api-docs we will use below swagger-ui link:-
   http://localhost:8080/swagger-ui.html
